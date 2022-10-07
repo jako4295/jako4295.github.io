@@ -24,7 +24,7 @@ p a:hover {
 	color:#995d36!important;
 }
 #background-green {
-	background:url(../images/bg-green-absolute.png);
+	background:#ff00e6;
 	height:100%;
 	margin:0;
 	position:absolute;
@@ -1079,13 +1079,15 @@ p a:hover {
 }
 .body .content-home div.featured img, .body .content-about div.featured img {
 	display:block;
-	margin:0 0 0 13px;
+	margin:0 auto;
+	width: 80%;
+	height: auto;
 }
 .body .content-home div ul li:first-child, .body .content-about, .body .content-about div div.sidebar div ul li:first-child, .body .content-about div div.sidebar div.section ul li:first-child, .body .content-blog div div.sidebar div.blog-categories ul li:first-child, .body .content-blog-single div div.sidebar div.blog-categories ul li:first-child {
 	margin:0;
 }
 .body .content-about div div.sidebar div:first-child a.selected, .body .content-project div.navigation ul li a:hover, .body .content-project div.navigation ul li.selected a {
-	color:#ce4718;
+	color:#1849ce;
 }
 .body .content-about div div.sidebar div ul li a, .body .content-blog div div.sidebar div ul li a, .body .content-blog-single div div.sidebar div ul li a {
 	margin:0 0 -1px;
