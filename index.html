@@ -36,15 +36,16 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#qualification" class="nav-item nav-link">Education</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
+                <!--<a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a> -->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <!--<a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>-->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -80,7 +81,7 @@
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Jakob Olsen</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Mathematical Engineer, B.Sc.</div>
+                    <div class="typed-text d-none">B.Sc. in Mathematical Engineering</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="img/CV_update.pdf" target="_blank" class="btn btn-outline-light mr-5">Download CV</a>
                     </div>
@@ -113,6 +114,9 @@
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">jakob@bikeolsen.dk</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Færøgade 47, Aalborg, Denmark</span></h6></div>
                     </div>
+                    <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
+                    <!-- <a href="https://www.linkedin.com/in/jakob-olsen-34744b147/" target="_blank" class="fa fa-linkedin-square">LinkedIn</a> -->
                     <!--<a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
                     <a href="" class="btn btn-outline-primary">Learn More</a> -->
                 </div>
@@ -126,52 +130,71 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Semester Projects</h1>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-start">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
+                    <h3 class="mb-4">Semester Projects</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <h5 class="font-weight-bold mb-1">
+                                P6 (Bachelor thesis): Satellite Tracking Using Multi Hypothesis Tracking and Kalman Filter</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Feb 2022 - May 2022</small></p>
+                            <p>The goal of this project is to track multiple satellites using simulated data provided by Weibel Scientific A/S. The abstract is included below:
+                                <br> <br>
+                                In this project, the goal was to track satellites in low earth orbit using Hypothesis Oriented Multiple Hypothesis Tracking and the Kalman Filter. The data used for the project was simulated using a script provided by Weibel Scientific A/S. The tests were carried out with different amounts of spread on the satellite tracks and with different amounts of false alarms. The algorithms successfully tracked the satellites in most scenarios. However, at a low signal to noise ration, the lack of detections caused issues for both algorithms.</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <h5 class="font-weight-bold mb-1">
+                                P5: Estimation of Currents and Voltages in an Electrical Grid</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Aug 2021 - Jan 2022</small></p>
+                            <p>In this project, the goal is to estimate currents and voltages in an electrical grid. This grid represents the structure of a small Danish town. Currents and voltages are being measured by smartmeters in households, but in this project, we use a general linear model to estimate these smartmeter measurements so that fewer measurement devices are needed. The abstract for this project can be read below.
+                                <br> <br>
+                                In this project smartmeters are used to measure currents and voltages in an electrical grid, representing a small town, which is assumed to follow a tree structure. Having smartmeters at every position would be expensive, hence the objective is to estimate currents and voltages in an electrical grid, with as few smartmeters as possible. Using theory concerning circuit analysis, the complex Gaussian distribution, optimization, complex differentiation, and statistics, a general linear model, which satisfies circuits laws, was derived. Assuming that we initially have smartmeters at every node in the tree structure we were, using the statistical model, able to remove approximately 30% of these smartmeters. Furthermore, we found that after replacing the measurements with estimates our model were not very tolerant towards defect smartmeters. It was, however, robust when detecting an increased impedance.</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
-                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <h5 class="font-weight-bold mb-1">P4: Siren Detection</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Feb 2021 - May 2021</small></p>
+                            <p>The purpose of this project was to design an algorithm to detect sirens in traffic. One of the learning goals for this project was to study the two types of digital filters; finite impulse response filters, and infinite impulse response filters. 
+                                Below is the abstract for this project:
+                                <br> <br>
+                                Sirens from emergency vehicles play an important role in traffic since they warn people of hazardous situations. Over time it has become more difficult to hear sirens, due to the improvement of noise reduction in car cabins and distractions such as music. This project focuses on the design of a detection algorithm that can be included as a vital part of a complete siren detection system. For the frequency analysis of different sirens, a short-time Fourier transform is used. Sirens used in this project change continuously in frequency and are periodic in frequency over time. Furthermore, when constructing a type I band-pass FIR window filter, it is used that the frequency range of most sirens is between 500Hz and 1500Hz. Based on this information a database is built. For the algorithm methods of estimating the period and minimum and maximum frequencies for sirens are developed. The robustness of the algorithm is tested by adding synthetic noise and interfering noises that appear in traffic. The tests showed that the detection algorithm worked as desired, but somewhat inconsistent. For further research, the database can be made with more characteristics of the sirens than the three used in this project in order to make the algorithm more consistent.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P3: Inverse Pendulum</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Aug 2020 - Jan 2021</small></p>
+                            <p>The goal of this project is to stabilise an inverted pendulum. This is done using Lagrange mechanics, stability analysis, and control theory. 
+                                <br> <br>
+                                Abstract: <br>
+                                The goal of this project has been to stabilise the inverted pendulum on a cart. This is done by describing the physical system with a linearised model. To create this model, equations of motion were derived using Lagrangian mechanics. The stability of the system is described using Lyabunov’s indirect method, and then controllability and observability were used to introduce state feedback control, in order to stabilise the inverted pendulum. When implementing the control theory it was found that controlling the system could be done by choosing certain eigenvalues for the linear model. From the simulation it was seen that some choices of eigenvalues could stabilise the pendulum quickly, but with the consequence of a high peak in force. Other sets resulted in a longer time to stabilise the pendulum, less force, and a longer movement along the rail for the cart, to do so.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
+                    <h3 class="mb-4">Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <h5 class="font-weight-bold mb-1">M.Sc. in Mathematical Engineering</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>2022 - now</small></p>
                             <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <h5 class="font-weight-bold mb-1">B.Sc. in Mathematical Engineering</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>2019 - 2022</small></p>
                             <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
-                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <h5 class="font-weight-bold mb-1">Business College (HHX)</h5>
+                            <p class="mb-2"><strong>Silkeborg Business College</strong> | <small>2014 - 2017</small></p>
                             <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
                         </div>
                     </div>
@@ -181,6 +204,60 @@
     </div>
     <!-- Qualification End -->
 
+    <!-- Own Projects Start -->
+    <div class="container-fluid py-5" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Personal Projects</h1>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-lg-12">
+                    <h3 class="mb-4">Semester Projects</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P6 (Bachelor thesis): Satellite Tracking Using Multi Hypothesis Tracking and Kalman Filter</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Feb 2022 - May 2022</small></p>
+                            <p>The goal of this project is to track multiple satellites using simulated data provided by Weibel Scientific A/S. The abstract is included below:
+                                <br> <br>
+                                In this project, the goal was to track satellites in low earth orbit using Hypothesis Oriented Multiple Hypothesis Tracking and the Kalman Filter. The data used for the project was simulated using a script provided by Weibel Scientific A/S. The tests were carried out with different amounts of spread on the satellite tracks and with different amounts of false alarms. The algorithms successfully tracked the satellites in most scenarios. However, at a low signal to noise ration, the lack of detections caused issues for both algorithms.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P5: Estimation of Currents and Voltages in an Electrical Grid</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Aug 2021 - Jan 2022</small></p>
+                            <p>In this project, the goal is to estimate currents and voltages in an electrical grid. This grid represents the structure of a small Danish town. Currents and voltages are being measured by smartmeters in households, but in this project, we use a general linear model to estimate these smartmeter measurements so that fewer measurement devices are needed. The abstract for this project can be read below.
+                                <br> <br>
+                                In this project smartmeters are used to measure currents and voltages in an electrical grid, representing a small town, which is assumed to follow a tree structure. Having smartmeters at every position would be expensive, hence the objective is to estimate currents and voltages in an electrical grid, with as few smartmeters as possible. Using theory concerning circuit analysis, the complex Gaussian distribution, optimization, complex differentiation, and statistics, a general linear model, which satisfies circuits laws, was derived. Assuming that we initially have smartmeters at every node in the tree structure we were, using the statistical model, able to remove approximately 30% of these smartmeters. Furthermore, we found that after replacing the measurements with estimates our model were not very tolerant towards defect smartmeters. It was, however, robust when detecting an increased impedance.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">P4: Siren Detection</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Feb 2021 - May 2021</small></p>
+                            <p>The purpose of this project was to design an algorithm to detect sirens in traffic. One of the learning goals for this project was to study the two types of digital filters; finite impulse response filters, and infinite impulse response filters. 
+                                Below is the abstract for this project:
+                                <br> <br>
+                                Sirens from emergency vehicles play an important role in traffic since they warn people of hazardous situations. Over time it has become more difficult to hear sirens, due to the improvement of noise reduction in car cabins and distractions such as music. This project focuses on the design of a detection algorithm that can be included as a vital part of a complete siren detection system. For the frequency analysis of different sirens, a short-time Fourier transform is used. Sirens used in this project change continuously in frequency and are periodic in frequency over time. Furthermore, when constructing a type I band-pass FIR window filter, it is used that the frequency range of most sirens is between 500Hz and 1500Hz. Based on this information a database is built. For the algorithm methods of estimating the period and minimum and maximum frequencies for sirens are developed. The robustness of the algorithm is tested by adding synthetic noise and interfering noises that appear in traffic. The tests showed that the detection algorithm worked as desired, but somewhat inconsistent. For further research, the database can be made with more characteristics of the sirens than the three used in this project in order to make the algorithm more consistent.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P3: Inverse Pendulum</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Aug 2020 - Jan 2021</small></p>
+                            <p>The goal of this project is to stabilise an inverted pendulum. This is done using Lagrange mechanics, stability analysis, and control theory. 
+                                <br> <br>
+                                Abstract: <br>
+                                The goal of this project has been to stabilise the inverted pendulum on a cart. This is done by describing the physical system with a linearised model. To create this model, equations of motion were derived using Lagrangian mechanics. The stability of the system is described using Lyabunov’s indirect method, and then controllability and observability were used to introduce state feedback control, in order to stabilise the inverted pendulum. When implementing the control theory it was found that controlling the system could be done by choosing certain eigenvalues for the linear model. From the simulation it was seen that some choices of eigenvalues could stabilise the pendulum quickly, but with the consequence of a high peak in force. Other sets resulted in a longer time to stabilise the pendulum, less force, and a longer movement along the rail for the cart, to do so.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Own Projects End -->
 
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
@@ -191,39 +268,41 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6">
+                    <h3>Languages</h3>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">95%</h6>
+                            <h6 class="font-weight-bold">Danish</h6>
+                            <h6 class="font-weight-bold">Native</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">85%</h6>
+                            <h6 class="font-weight-bold">English</h6>
+                            <h6 class="font-weight-bold">Fluent</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHP</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                            <h6 class="font-weight-bold">German</h6>
+                            <h6 class="font-weight-bold">Limited</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <h3>Programming & Version Control</h3>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Javascript</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">Experienced</h6>
                         </div>
                         <div class="progress">
                             <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -231,30 +310,34 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Angular JS</h6>
-                            <h6 class="font-weight-bold">95%</h6>
+                            <h6 class="font-weight-bold">R, Matlab, LATEX</h6>
+                            <h6 class="font-weight-bold">Fundamentals</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Wordpress</h6>
-                            <h6 class="font-weight-bold">85%</h6>
+                            <h6 class="font-weight-bold">GitHub</h6>
+                            <h6 class="font-weight-bold">Fundamentals</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
+            <h3>Programming Experience and Personal Interests</h3>
+            Python, matlab, ..  experience
+            <p></p>
         </div>
     </div>
     <!-- Skill End -->
 
 
-    <!-- Services Start -->
+    <!-- Services Start 
     <div class="container-fluid pt-5" id="service">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -313,10 +396,11 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Services End -->
 
 
-    <!-- Portfolio Start -->
+    <!-- Portfolio Start 
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -397,10 +481,11 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Portfolio End -->
 
 
-    <!-- Testimonial Start -->
+    <!-- Testimonial Start 
     <div class="container-fluid py-5" id="testimonial">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -436,10 +521,11 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start -->
+    <!-- Blog Start 
     <div class="container-fluid pt-5" id="blog">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -483,6 +569,7 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Blog End -->
 
 
@@ -537,12 +624,13 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
+            
+            
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
             </div>
+            
             <div class="d-flex justify-content-center mb-3">
                 <a class="text-white" href="#">Privacy</a>
                 <span class="px-3">|</span>

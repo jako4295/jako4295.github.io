@@ -2594,7 +2594,7 @@ fieldset:disabled a.btn {
 .btn-light {
   color: #212529;
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #000000;
 }
 
 .btn-light:hover {
