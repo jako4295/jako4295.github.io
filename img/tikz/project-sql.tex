@@ -1,0 +1,93 @@
+\documentclass[border=0.125cm]{standalone}
+\usepackage{tikz}
+%\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+
+%\usepackage{type1cm}
+
+
+\begin{document}
+
+\tikzset{
+  comp/.style = {
+    minimum width  = 8cm,
+    minimum height = 4.5cm,
+    text width     = 8cm,
+    inner sep      = 0pt,
+    text           = green,
+    align          = center,
+    font           = \fontsize{32}{32}\selectfont,
+    transform shape,
+    thick
+  },
+  monitor/.style = {draw = none, xscale = 18/16, yscale = 11/9},
+  display/.style = {shading = axis, left color = black!60, right color = black},
+  ut/.style      = {fill = gray}
+}
+\tikzset{
+  computer/.pic = {
+    % screen (with border)
+    \node(-m) [comp, pic actions, monitor]
+      {\phantom{\parbox{\linewidth}{\tikzpictext}}};
+    % display (without border)
+    \node[comp, pic actions, display] {\tikzpictext};
+    \begin{scope}[x = (-m.east), y = (-m.north)]
+      % filling the lower part
+      \path[pic actions, draw = none]
+        ([yshift=2\pgflinewidth]-0.1,-1) -- (-0.1,-1.3) -- (-1,-1.3) --
+        (-1,-2.4) -- (1,-2.4) -- (1,-1.3) -- (0.1,-1.3) --
+        ([yshift=2\pgflinewidth]0.1,-1);
+      % filling the border of the lower part
+      \path[ut]
+        (-1,-2.4) rectangle (1,-1.3)
+        (-0.9,-1.4) -- (-0.7,-2.3) -- (0.7,-2.3) -- (0.9,-1.4) -- cycle;
+      % drawing the frame of the whole computer
+      \path[pic actions, fill = none]
+        (-1,1) -- (-1,-1) -- (-0.1,-1) -- (-0.1,-1.3) -- (-1,-1.3) --
+        (-1,-2.4) coordinate(sw)coordinate[pos=0.5] (-b west) --
+        (1,-2.4) -- (1,-1.3) coordinate[pos=0.5] (-b east) --
+        (0.1,-1.3) -- (0.1,-1) -- (1,-1) -- (1,1) -- cycle;
+      % node around the whole computer
+      \node(-c) [fit = (sw)(-m.north east), inner sep = 0pt] {};
+    \end{scope}
+  }
+}
+
+\begin{tikzpicture}[]
+
+	\node [circle, draw, minimum size=1, scale=17.5] (server) at (0,0){};
+	
+	\node [above, yshift=3cm] (server) {Oracle Server};
+	
+	%\node [rectangle, rounded corners, draw] (database) at (2.5,3.5){\small Database};
+	
+	\node [circle, draw, minimum size=1.5, scale=11] (docker) at (-1,0){};	
+	
+	\node [left, yshift=1.5cm, xshift=-0.3cm] (docker) {Docker};
+	
+	\node [circle, draw, minimum size=1] (postgres) at (-1,0){\small postgreSQL};
+	
+	%\draw [rounded corners, ->] (database) -- (2.5,1) |- (1.5,1);
+	
+	\pic(comp0) [
+    draw,
+    fill = gray!30,
+    pic text = {PostgreSQL\\ Python},
+    scale = 0.2
+  ] at (-1,-4.5){computer};
+  
+    \draw [dashed, ->] (postgres) -- (comp0-c);
+    
+    \node [] (files) at (1,-1){Files/results};
+    \draw [->, rounded corners] (comp0-c) -| (files);
+	
+	\node [rectangle, rounded corners, draw] (website) at (4,0){Website};    
+    
+    \draw [->, rounded corners, dashed] (files) |- (postgres) -- (website);
+
+
+
+\end{tikzpicture}
+
+
+\end{document}

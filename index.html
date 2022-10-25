@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--https://www.free-css.com/free-css-templates/page278/freefolio?fbclid=IwAR0tZ2yBDyTmQmz8MGtgvXR487ZcyGjB2aH396cV7DvgdGQVsFsepsmaJo8-->
 <head>
     <meta charset="utf-8">
     <title>Jakob Olsen CV</title>
@@ -24,6 +24,9 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -36,14 +39,14 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#qualification" class="nav-item nav-link">Education</a>
-                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <!--<a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a> -->
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a> 
+                <a href="#contact" class="nav-item nav-link">Contact</a>-->
             </div>
             <a href="img/CV_update.pdf" target="_blank" class="btn btn-outline-primary d-none d-lg-block">Download CV</a>
         </div>
@@ -84,6 +87,9 @@
                     <div class="typed-text d-none">B.Sc. in Mathematical Engineering</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="img/CV_update.pdf" target="_blank" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a class="btn btn-outline-light mr-2" target="_blank" href="https://github.com/jako4295"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -106,11 +112,9 @@
                 <div class="col-lg-7">
                     <h3 class="mb-4">B.Sc. in Mathematical Engineering</h3>
                     <p>
-                        I am currently studying to finish my Master's degree in Mathematical Engineering. In my studies I have found that the most interesting part about my education is analyzing different types of data in new ways. The newest tool in the analyzing toolbox is mahcine learning and neural networks, which we are currently using in our semester project. This is a great approach as it can be generalized for many different use cases without having to adjust the model parameters much. Although this approach is in many cases adequate I always find it interesting to compare this type of performance with alternative models. 
+                        I am currently studying to finish my Master's degree in Mathematical Engineering. In my studies, I have found that the most interesting part of my education is data analysis. As I want to learn more about this side of my studies I have decided to create a small project on this website. I will set up a server with a PostgreSQL enviroment that will be used as a relational database management system. If you are interested in reading more on this project check out <a href="#projects">Projects</a>.
                         <br><br>
-                        As I want to learn my about this side of my studies I have decided to create a small project on this website. I will set up a server and use SQL to manage the data stored on it. If you are interested in reading more on this project check out <a href="#projects">Projects</a>.
-                        <br><br>
-                        In my freetime I like being active such that I get renewed energy for my studies. We spend a lot of time in front of a computer so I think it is important to get outside as well. I am playing disc golf in the local disc golf club in Aalborg and enjoy being outside to clear my head. 
+                        In my free time, I like being active such that I get renewed energy for my studies. We spend a lot of time in front of a computer so I think it is important to get outside as well. I am playing disc golf in the local disc golf club in Aalborg and enjoy being outside to clear my head. 
                     </p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Jakob Olsen</span></h6></div>
@@ -118,8 +122,9 @@
                         <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+45 20 10 03 77</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">jakob@bikeolsen.dk</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Færøgade 47, Aalborg, Denmark</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Location: <span class="text-secondary">Aalborg, Denmark</span></h6></div>
                     </div>
+                    <a class="btn btn-light btn-social mr-2" target="_blank" href="https://github.com/jako4295"><i class="fab fa-github"></i></a>
                     <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
                     <!-- <a href="https://www.linkedin.com/in/jakob-olsen-34744b147/" target="_blank" class="fa fa-linkedin-square">LinkedIn</a> -->
@@ -130,6 +135,40 @@
         </div>
     </div>
     <!-- About End -->
+
+    <!-- Own Projects Start -->
+    <div class="container-fluid py-5" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Personal Projects</h1>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-lg-12">
+                    <h3 class="mb-4">Personal Project</h3>
+                    <p>I will be working on this project in my spare time, so the following timeline will be updated every now and then.</p>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                Project Overview</h5>
+                            <p class="mb-2"><strong> </strong> | <small>08-10-2022</small></p>
+                            <p>I decided to start this project because I thought it would be fun to try a relational database management system. For this purpose I have chosen to use PostgreSQL. Before getting started with this software on my own computer I first want to setup a PostgreSQL database on an Ubuntu virtual machine. To setup the server i haven chosen to use Oracle. When this is fully setup I will load some data from the PostgreSQL server into Python and analyze the data. The results of this will eventually be vizualized on this timeline and at the Python scripts will be on my GitHub account. A vizualization of the project is seen below. </p>
+                            <img src="img/tikz/project-sql.png" class="img-center">
+                            <p></p>
+
+                            <h5 class="font-weight-bold mb-1">
+                                Ubuntu Virtual Machine (VM)</h5>
+                            <p class="mb-2"><strong> </strong> | <small>25-10-2022</small></p>
+                            <p>I have now setup a server on Oracle and downloaded the necessary software for the VM. Setting up this instance was fairly simple and I since this is only a personal project I will use one of the free instances that Oracle provides.</p>
+                            <p>I have have been searching for tutorials on how to setup the PostgreSQL environment and the following video <a href="https://www.youtube.com/playlist?list=PLf0swTFhTI8q3xE87-EvjnMveAEZfuIIC" target="_blank">tutorial</a>. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Own Projects End -->
 
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
@@ -267,6 +306,16 @@
                                 Abstract: <br>
                                 The goal of this project has been to stabilise the inverted pendulum on a cart. This is done by describing the physical system with a linearised model. To create this model, equations of motion were derived using Lagrangian mechanics. The stability of the system is described using Lyabunov’s indirect method, and then controllability and observability were used to introduce state feedback control, in order to stabilise the inverted pendulum. When implementing the control theory it was found that controlling the system could be done by choosing certain eigenvalues for the linear model. From the simulation it was seen that some choices of eigenvalues could stabilise the pendulum quickly, but with the consequence of a high peak in force. Other sets resulted in a longer time to stabilise the pendulum, less force, and a longer movement along the rail for the cart, to do so.</p>
                         </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P2: Fingerprint Verification</h5>
+                            <p class="mb-2"><strong>Aalborg University</strong> | <small>Aug 2020 - Jan 2021</small></p>
+                            <p>This project used Linear Algebra, Wavelets, Poincaré Index, and the Pearson Correlation Coefficient to verify fingerprints. All algorithms were implemented in Python.
+                                <br> <br>
+                                Abstract: <br>
+                                This project concerns fingerprint verification. A DB4 wavelet transform is used to remove Gaussian white noise from fingerprint images. Moreover, the Poincaré index is used to classify the fingerprints. The verification part is done with the Pearson correlation coefficient (PCC). Altogether, the wavelet transform did a good job removing noise, and the Poincaré index is a good classifier for images with a minimum amount of noise. The results of the implemented code was that it were able to recognize fingerprints to some extent. This was done by first classifying the fingerprint, and then comparing the PCC. The fingerprint were considered a match, if the PCC were above a set acceptance level.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -276,48 +325,80 @@
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">M.Sc. in Mathematical Engineering</h5>
                             <p class="mb-2"><strong>Aalborg University</strong> | <small>2022 - now</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <ul>
+                                <li>Focus on data analysis, programming, machine learning, and neural networks.</li>
+                            </ul>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">B.Sc. in Mathematical Engineering</h5>
                             <p class="mb-2"><strong>Aalborg University</strong> | <small>2019 - 2022</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <ul>
+                                <li>Mathematical background with courses like Calculus, Linear Algebra, Analysis, Probability Theory, etc. Through semester projects and courses I have programming experience in Python and I am familiar with object oriented programming.</li>
+                            </ul>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Business College (HHX)</h5>
                             <p class="mb-2"><strong>Silkeborg Business College</strong> | <small>2014 - 2017</small></p>
-                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                            <p></p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
 
-    <!-- Own Projects Start -->
-    <div class="container-fluid py-5" id="projects">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Personal Projects</h1>
-            </div>
-            <div class="row align-items-start">
-                <div class="col-lg-12">
-                    <h3 class="mb-4">SQL, Database, Server, Neural Networks, Python, Data processing</h3>
-                    <p>I will be working on this project in my spare time, so the following timeline will be updated every now and then.</p>
+                    <h3 class="mb-4">Courses</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">
-                                Project Overview</h5>
-                            <p class="mb-2"><strong> </strong> | <small>08-10-2022 - Now</small></p>
-                            <p>To do:</p>
+                            <h5 class="font-weight-bold mb-1">6. Semester</h5>
                             <ul>
-                                <li>Create overview through flowchart.</li>
-                                <li>Add purpose and project discription.</li>
+                                <li>Numerical Scientific Computing</li>
+                                <li>Algorithms and Data Structures</li>
+                                <li>Spatial Statistics and MCMC Methods</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">5. Semester</h5>
+                            <ul>
+                                <li>Optimization Methods</li>
+                                <li>Statistical Inference for Linear Models</li>
+                                <li>Stochastic Processes</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">4. Semester</h5>
+                            <ul>
+                                <li>Probability Theory</li>
+                                <li>Discrete-Time Systems</li>
+                                <li>Applied Harmonic Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">3. Semester</h5>
+                            <ul>
+                                <li>Mathematical Analysis I</li>
+                                <li>Linear Algebra with Applications</li>
+                                <li>Mathematical Modelling and Simulation of Technological Systems II</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">2. Semester</h5>
+                            <ul>
+                                <li>Linear Algebra</li>
+                                <li>Numerical Methods</li>
+                                <li>Data Acquisition</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">1. Semester</h5>
+                            <ul>
+                                <li>Calculus</li>
+                                <li>Problem Based Learning in Science, Technology and Society</li>
+                                <li>Mathematical Modelling and Simulation of Technological Systems I</li>
                             </ul>
                         </div>
                     </div>
@@ -325,7 +406,7 @@
             </div>
         </div>
     </div>
-    <!-- Own Projects End -->
+    <!-- Qualification End -->
 
 
     <!-- Services Start 
@@ -563,8 +644,9 @@
     -->
     <!-- Blog End -->
 
-
+    
     <!-- Contact Start -->
+    <!--
     <div class="container-fluid py-5" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -609,6 +691,7 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Contact End -->
 
 
@@ -618,10 +701,11 @@
             
             
             <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://github.com/jako4295"><i class="fab fa-github"></i></a>
                 <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
             </div>
-            
+            <!--
             <div class="d-flex justify-content-center mb-3">
                 <a class="text-white" href="#">Privacy</a>
                 <span class="px-3">|</span>
@@ -630,8 +714,8 @@
                 <a class="text-white" href="#">FAQs</a>
                 <span class="px-3">|</span>
                 <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </div>-->
+            <p class="m-0"><!--&copy;  <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved.--> Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
             </p>
         </div>
     </div>

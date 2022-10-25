@@ -6933,6 +6933,13 @@ button.bg-dark:focus {
   align-self: stretch !important;
 }
 
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 @media (min-width: 576px) {
   .flex-sm-row {
     flex-direction: row !important;
@@ -9778,6 +9785,10 @@ h6,
   right: 30px;
   bottom: 30px;
   z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.to-subject {
   animation: action 1s infinite alternate;
 }
 
