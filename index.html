@@ -51,7 +51,7 @@
                 <a href="#blog" class="nav-item nav-link">Blog</a> 
                 <a href="#contact" class="nav-item nav-link">Contact</a>-->
             </div>
-            <a href="img/CV.pdf" target="_blank" class="btn btn-outline-primary d-none d-lg-block">Download CV</a>
+            <a href="file/CV.pdf" target="_blank" class="btn btn-outline-primary d-none d-lg-block">Download CV</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -89,7 +89,7 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">B.Sc. in Mathematical Engineering</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="img/CV.pdf" target="_blank" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="file/CV.pdf" target="_blank" class="btn btn-outline-light mr-5">Download CV</a>
                         <a class="btn btn-outline-light mr-2" target="_blank" href="https://github.com/jako4295"><i class="fab fa-github"></i></a>
                         <a class="btn btn-outline-light mr-2" target="_blank" href="https://www.linkedin.com/in/jakob-olsen-34744b147/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light mr-2" target="_blank" href="mailto:jakob@bikeolsen.dk"><i class="fa fa-envelope"></i></a>
@@ -165,6 +165,20 @@
                             <p class="mb-2"><strong> </strong> | <small>25-10-2022</small></p>
                             <p>I have now setup a server on Oracle and downloaded the necessary software for the VM. Setting up this instance was fairly simple and I, since this is only a personal project, will use one of the free instances that Oracle provides.</p>
                             <p>I have have been searching for tutorials on how to setup the PostgreSQL environment and the following video <a href="https://www.youtube.com/playlist?list=PLf0swTFhTI8q3xE87-EvjnMveAEZfuIIC" target="_blank">tutorial</a>. </p>
+                            
+                            <h5 class="font-weight-bold mb-1">
+                                Ubuntu Virtual Machine (VM) - Continued</h5>
+                            <p class="mb-2"><strong> </strong> | <small>07-12-2022</small></p>
+                            <p>In order to create a Docker container with a PostgreSQL image, it was only necessary to use the first couple of videos from the tutorial. Here are the most important commands that were used:
+                                <ol>
+                                    <li><code>docker pull postgres</code> to download the PostgreSQL image from Docker Hub.</li>
+                                    <li><code>docker container create ...</code> to create a Docker container with the PostgreSQL image, and set the password for the postgres user.</li>
+                                    <li><code>docker container start NameOfContainer</code> to start the conatiner.</li>
+                                    <li>To test if it started I used <code>docker container logs NameOfContainer</code></li>
+                                </ol>
+                            The next step is to connect the PostgreSQL server from the Docker container to pgAdmin in order to manage the database. This will be done by adding a new server to pgAdmin, and specifying the host name, port number, and authentication details for the PostgreSQL server. All of these details were specified when calling <code>docker container create ...</code>.
+                            Once the server has been added to pgAdmin, it will be possible to create and manage databases, tables, and other objects in the PostgreSQL server using the pgAdmin interface.
+                            </p>
                         </div>
                     </div>
                 </div>
