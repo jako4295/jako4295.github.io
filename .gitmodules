@@ -1,0 +1,3 @@
+[submodule "docs/baroncs"]
+	path = docs/baroncs
+	url = https://github.com/jako4295/baroncs.git
