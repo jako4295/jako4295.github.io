@@ -173,11 +173,30 @@
             </div>
             <div class="row align-items-start">
                 <div class="col-lg-12">
+                    <p style="font-size: smaller;">
+                        Disclaimer: The following content is not included due to the technical difficulty of the 
+                        implementation, but rather it is included for me to experiment with different tools such as 
+                        Sphinx documentation, Pip packages, Streamlit web apps, etc. In fact the repositories were
+                        created during my studies, while the different tools were implemented as a hobby project.
+                    </p>
+                    
                     <h2 class="mb-4">Documentation</h2>
                         <p>
+                            I have created documentation for a Python package and I am planning on creating documentation
+                            for more in the future. The documentation is made with Sphinx and this website is also used to
+                            host the documentation. When writing a lot of code it is often frustrating to come across packages
+                            that are not well documented. Therefore, I wanted to get some experience with setting up
+                            documentation for a package. The documentation can be found here: 
+                            <ul>
+                                <li>
+                                    <u style="font-size: larger;"><a href="docs/baroncs/docs/build/html/index.html">baroncs</a></u>
+                                </li>
+                            </ul>
+                            <!--
                             I have created documentation for some applications that I have made in my spare time or during my
                             studies. The documentation is made with Sphinx and this website is also used to host the
                             documentation. An overview of the different documentation pages is found <a href="docs/index.html">here</a>.
+                            -->
                         </p>
                     <h2 class="mb-4">Projects</h2>
                     <p>
@@ -191,14 +210,30 @@
                         charge state of the ions in the accelerator complex at CERN.
                         <br><br>
                         For instance if the user wants to accelerate Pb ions then this calculater is used to calculate
-                        the charge state of the Pb ions after the ions has passed the carbon stripper foil. The resulting
-                        distribution can then be used to determine what ions should be used in the coming accelerator. 
-                        The application is made in Python and is hosted on Streamlit. The code for the application can 
-                        be found <a href="https://github.com/jako4295/baroncs">here</a>, and the
+                        the charge state distribution of the Pb ions after the ions has passed the carbon stripper foil. 
+                        This stripper foil is located in the Linac3 accelerator short after the ions has been produced.
+                        The resulting distribution can then be used to determine what ions should be used in the coming 
+                        accelerators. 
+                        The application is made in Python and is hosted on Streamlit. The code for the 
+                        application can be found <a href="https://github.com/jako4295/baroncs">here</a>, and the
                         Streamlit application is found <a href="https://stwebapp-test.streamlit.app/">here</a>. The
                         Streamlit application is embedded below.
                     </p>
                     <iframe src="https://stwebapp-test.streamlit.app/?embedded=true" width="100%" height="600"></iframe>
+                    <br><br>
+                    <h5 class="mb-4">Electron Configuration</h5>
+                    <p>
+                        This application is made while interning at CERN. It is used to get the electron configuration
+                        of an element after removing electrons from the atom. Furthermore, it also finds the 
+                        principle quantum number of outermost projectile electron. At my internship this was used to 
+                        find the cross section between the beam and residual gasses within the vacuum chamber.
+                        <br><br>
+                        The application is made in Python and is hosted on Streamlit. The code for the 
+                        application can be found <a href="https://github.com/jako4295/electronconfig">here</a>, and the
+                        Streamlit application is found <a href="https://electronconfig.streamlit.app/">here</a>. The
+                        Streamlit application is embedded below.
+                    </p>
+                    <iframe src="https://electronconfig.streamlit.app/?embedded=true" width="100%" height="600"></iframe>
                 </div>
             </div>
         </div>
@@ -332,21 +367,20 @@
             <p>
                 Python has throughout my education been the go-to programming language. Hence, every semester project
                 Python has played an important role. Furthermore, I am familiar with object oriented programming through
-                these projects. Since the start of my Master's I have also been working on Neural Networks (Feed
-                Forward, Convolutional, and Recurrent), and also I am taking a course in Machine Learning.
+                these projects and from my student job at APX10.
                 <br><br>
                 I have had several statistical courses where I have been using R as the main programming languguage. For
                 statistical purposes R would be my go-to.
                 <br>
                 Matlab is very similar to programming in Python. I have had some courses where we have been using and
-                writing code in Matlab. Especially in my Bachelor's thesis where I was working together with Weibel A/S
-                we recieved all simulation scripts in Matlab.
+                writing code in Matlab. Especially during my Bachelor's thesis, where I was working together with Weibel A/S,
+                all simulation scripts were written in Matlab.
                 <br>
                 In every semester project I have been using LaTeX to write the report. In addition to that I have been
                 using TikZ to create the figures, flowcharts, and the like, for the report.
                 <br>
-                The last couple of semesters my group and I have been using GitHub for version control, where we work in
-                branches and push our code to the main branch when the code is good enough for our project.
+                GitHub has been used for version control in most of my projects and I have also been using it for my
+                personal projects.
             </p>
         </div>
     </div>
@@ -363,6 +397,22 @@
                 <div class="col-lg-6">
                     <h3 class="mb-4">Semester Projects</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                P9: Study of Beam and Residual Gas Interactions at the CERN Accelerator Complex</h5>
+                            <p class="mb-2"><strong>Aalborg University - CERN internship</strong> | <small>Aug 2023 - Jan 2024</small></p>
+                            <p>The current Pb ion beam suffers from heavy losses in the CERN Ion Injector Chain, 
+                                consisting of Linac3, LEIR, the PS, and the SPS. This study focuses on the interaction 
+                                between the ion beam and residual gas molecules, specifically on electron loss and electron 
+                                capture from these interactions. Estimating the cross-section for electron loss and electron 
+                                capture together with the inverse relation between the cross-section and lifetime is the 
+                                theoretical foundation for this work. By injecting additional residual gasses in the PS it 
+                                was possible to validate a new cross-section estimator. The new cross-section estimator was 
+                                used to conclude that beam-gas interactions are not the primary factor limiting the beam 
+                                intensity in the tested rings (LEIR, the PS, and the SPS).</p>
+                        </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
@@ -558,6 +608,7 @@
                     </div>
 
                     <h3 class="mb-4">Courses</h3>
+                    <p class="mb-2"><strong>M.Sc</strong></p>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
@@ -579,6 +630,9 @@
                                 <li>Numerical Methods</li>
                             </ul>
                         </div>
+                    </div>
+                    <p class="mb-2"><strong>B.Sc</strong></p>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
