@@ -1,3 +1,6 @@
 [submodule "docs/baroncs"]
 	path = docs/baroncs
 	url = https://github.com/jako4295/baroncs.git
+[submodule "j2a"]
+	path = docs/j2a
+	url = https://github.com/jako4295/j2a.git
